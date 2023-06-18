@@ -1,6 +1,8 @@
 import express from 'express';
+import dotenv from 'dotenv';
 
-import { config } from './config/config.js';
+dotenv.config();
+
 const app = express();
 
 app.get('/', function (req, res) {
@@ -22,6 +24,8 @@ app.delete('/usuarios/:id', function (req, res) {
   res.json('DELETE usuarios');
 });
 
-app.listen(4000, () => {
-  console.log('Escuchando puerto 4000');
+const PORT = process.env.PORT || 4001;
+
+app.listen(PORT, () => {
+  console.log(`Escuchando puerto ${PORT}`);
 });
