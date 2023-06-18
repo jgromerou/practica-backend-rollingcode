@@ -1,0 +1,16 @@
+{
+  "name": "practica-backend-rolling",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Es un proyecto del campus de Rolling Code para practicar",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Gerardo Romero Uro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
